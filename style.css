@@ -49,38 +49,6 @@ header nav ul li a {
   margin: 0 20px 0 0;
 }
 
-/*  Desktop view  */
-
-@media all and (min-width: 700px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  h1 {
-    margin: 14px 0 14px 20px;
-    padding-top: 0;
-    font-size: 42px;
-  }
-
-  header nav {
-    margin-top: 14px;
-  }
-  header ul {
-    margin-top: 50px;
-    font-size: 28px;
-  }
-
-  .group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
-  }
-}
-
 main {
   padding-top: 10px;
 }
@@ -95,7 +63,7 @@ p {
 }
 
 img {
-  max-width: 400px;
+  max-width: 500px;
 }
 /* groups */
 
@@ -111,12 +79,13 @@ img {
 /* single spaced item*/
 .item {
   flex: 1;
-  margin: 10px;
+  padding: 20px;
+  align-self: center;
 }
 /* double spaced item */
 .item-double {
   flex: 2;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* class distinctions */
@@ -174,26 +143,47 @@ footer h2 {
 /* media query 
 Desktop
 */
-@media all and (min-width: 800px) {
-  section {
-    padding: 0 5%;
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
   }
+
+  h1 {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+  header ul {
+    margin-top: 50px;
+    font-size: 28px;
+  }
+
   .group {
+    display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-between;
   }
+
   .group-projects {
     display: flex;
     flex-direction: row;
   }
   p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .footer-group {
     justify-content: space-around;
   }
-  .yoga-mat {
-    margin-top: 25px;
-  }
+
   footer {
     height: 100px;
     background: rgb(124, 80, 243);
