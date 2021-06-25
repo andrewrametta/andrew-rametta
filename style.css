@@ -19,6 +19,10 @@ h3 {
   color: #44158f;
 }
 
+h3 {
+  text-align: center;
+}
+
 h2.about-me {
   color: white;
 }
@@ -32,6 +36,13 @@ header nav {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   font-size: 20px;
+}
+
+ul {
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
 }
 
 header nav ul {
@@ -66,6 +77,7 @@ p {
 img {
   width: 100%;
 }
+
 /* groups */
 
 .group {
@@ -114,6 +126,16 @@ img {
 
 .project-item {
   flex: 1;
+  padding-bottom: 30px;
+}
+
+.project-img {
+  padding-top: 20px;
+}
+
+div.link-group {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* footer for mobile */
@@ -177,9 +199,8 @@ Desktop
   div.group-projects {
     display: flex;
     flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: space-between;
+
+    justify-content: space-around;
   }
 
   div.project-item {
@@ -213,7 +234,14 @@ a {
   text-decoration: none;
 }
 
-a.project-links {
+a:link.project-links {
+  color: #44158f;
+  padding-right: 30px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+a:visited.project-links {
   color: #44158f;
 }
 
