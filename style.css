@@ -111,6 +111,10 @@ img {
   padding: 10px;
 }
 
+.project-item {
+  flex: 1;
+}
+
 /* footer for mobile */
 
 footer {
@@ -169,13 +173,24 @@ Desktop
     justify-content: space-between;
   }
 
-  .group-projects {
+  div.group-projects {
     display: flex;
     flex-direction: row;
     margin-left: 10%;
     margin-right: 10%;
     justify-content: space-between;
   }
+
+  div.project-item {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  div.project-img {
+    text-align: center;
+    width: 100%;
+  }
+
   p {
     font-size: 20px;
   }
