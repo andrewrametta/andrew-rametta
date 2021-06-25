@@ -13,8 +13,14 @@ header {
   height: 10%;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: #44158f;
+}
+
+h2.about-me {
+  color: white;
 }
 
 /*mobile nav display*/
@@ -102,17 +108,15 @@ img {
 }
 
 .group-projects {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* footer for mobile */
 
 footer {
-  height: 75px;
+  height: 10%;
   background: #44158f;
-  margin-bottom: -500px;
   color: white;
-  margin-top: 20px;
 }
 
 footer h2 {
@@ -124,14 +128,14 @@ footer h2 {
 .footer-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .footer-item {
   text-decoration: none;
   font-size: 20px;
+  padding: 20px;
 }
 
 /* media query 
@@ -168,12 +172,12 @@ Desktop
   .group-projects {
     display: flex;
     flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
   }
   p {
     font-size: 20px;
-  }
-  .footer-group {
-    justify-content: space-around;
   }
 
   footer {
@@ -187,6 +191,10 @@ Desktop
   footer a {
     font-size: 20px;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 a:link {
